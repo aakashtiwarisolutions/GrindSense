@@ -1,5 +1,6 @@
 # GrindSense
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24288332.svg)](https://doi.org/10.5281/zenodo.24288332)
 Private, on-device detection of sleep bruxism from smartphone audio.
 
 This repository contains the data collection and labeling tools for GrindSense. They are used to record nights at home with an iPhone and label teeth-grinding sounds, building the dataset for a compact CNN that will run fully offline on the phone. The full research proposal is in `GrindSense_Research_Plan.pdf`.
