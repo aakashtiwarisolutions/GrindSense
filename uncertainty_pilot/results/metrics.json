@@ -1,0 +1,270 @@
+{
+  "n_clips": {
+    "clean": 320,
+    "noisy": 1600,
+    "unseen": 320
+  },
+  "methods": {
+    "softmax": {
+      "clean": {
+        "acc": 0.775,
+        "ece": 0.09118021056056023
+      },
+      "snr_20": {
+        "acc": 0.609375,
+        "ece": 0.11230709799565378,
+        "fail_auroc": 0.8225641025641026
+      },
+      "snr_10": {
+        "acc": 0.503125,
+        "ece": 0.2226307736709714,
+        "fail_auroc": 0.7416695964686121
+      },
+      "snr_5": {
+        "acc": 0.396875,
+        "ece": 0.3297362657263875,
+        "fail_auroc": 0.6771245563216515
+      },
+      "snr_0": {
+        "acc": 0.33125,
+        "ece": 0.40526787014678123,
+        "fail_auroc": 0.635910774113913
+      },
+      "snr_-5": {
+        "acc": 0.26875,
+        "ece": 0.4698238645680249,
+        "fail_auroc": 0.5580898429735639
+      },
+      "unseen_auroc_entropy": 0.519541015625,
+      "unseen_mean_conf": 0.6972526422701776,
+      "review": [
+        {
+          "flag_fraction": 0.1,
+          "problems_total": 1317,
+          "problems_caught": 175,
+          "catch_rate": 0.13287775246772968,
+          "kept_accuracy": 0.5005727376861397,
+          "kept_unseen": 270
+        },
+        {
+          "flag_fraction": 0.2,
+          "problems_total": 1317,
+          "problems_caught": 321,
+          "catch_rate": 0.2437357630979499,
+          "kept_accuracy": 0.5096030729833547,
+          "kept_unseen": 230
+        },
+        {
+          "flag_fraction": 0.3,
+          "problems_total": 1317,
+          "problems_caught": 491,
+          "catch_rate": 0.37281700835231585,
+          "kept_accuracy": 0.5384615384615384,
+          "kept_unseen": 190
+        }
+      ],
+      "night_no_review_accuracy_on_known": 0.48072916666666665
+    },
+    "mc_dropout": {
+      "clean": {
+        "acc": 0.753125,
+        "ece": 0.10377989243716002
+      },
+      "snr_20": {
+        "acc": 0.590625,
+        "ece": 0.08964735288172959,
+        "fail_auroc": 0.816268831536007
+      },
+      "snr_10": {
+        "acc": 0.484375,
+        "ece": 0.16817174600437282,
+        "fail_auroc": 0.7205474095796676
+      },
+      "snr_5": {
+        "acc": 0.375,
+        "ece": 0.2831721984315663,
+        "fail_auroc": 0.6938333333333334
+      },
+      "snr_0": {
+        "acc": 0.31875,
+        "ece": 0.3424194984138012,
+        "fail_auroc": 0.6205252743299154
+      },
+      "snr_-5": {
+        "acc": 0.24375,
+        "ece": 0.41228237738832824,
+        "fail_auroc": 0.5750158931977114
+      },
+      "unseen_auroc_entropy": 0.5572851562500001,
+      "unseen_auroc_mi": 0.67009765625,
+      "unseen_mean_conf": 0.6259941216558218,
+      "review": [
+        {
+          "flag_fraction": 0.1,
+          "problems_total": 1355,
+          "problems_caught": 182,
+          "catch_rate": 0.13431734317343175,
+          "kept_accuracy": 0.4842044801838024,
+          "kept_unseen": 275
+        },
+        {
+          "flag_fraction": 0.2,
+          "problems_total": 1355,
+          "problems_caught": 343,
+          "catch_rate": 0.25313653136531367,
+          "kept_accuracy": 0.49744897959183676,
+          "kept_unseen": 224
+        },
+        {
+          "flag_fraction": 0.3,
+          "problems_total": 1355,
+          "problems_caught": 501,
+          "catch_rate": 0.36974169741697416,
+          "kept_accuracy": 0.5170166545981173,
+          "kept_unseen": 187
+        }
+      ],
+      "review_mi": [
+        {
+          "flag_fraction": 0.1,
+          "problems_total": 1355,
+          "problems_caught": 179,
+          "catch_rate": 0.13210332103321032,
+          "kept_accuracy": 0.48331415420023016,
+          "kept_unseen": 278
+        },
+        {
+          "flag_fraction": 0.2,
+          "problems_total": 1355,
+          "problems_caught": 343,
+          "catch_rate": 0.25313653136531367,
+          "kept_accuracy": 0.5022537025112686,
+          "kept_unseen": 239
+        },
+        {
+          "flag_fraction": 0.3,
+          "problems_total": 1355,
+          "problems_caught": 493,
+          "catch_rate": 0.3638376383763838,
+          "kept_accuracy": 0.5179750550256786,
+          "kept_unseen": 205
+        }
+      ],
+      "night_no_review_accuracy_on_known": 0.4609375
+    },
+    "ensemble": {
+      "clean": {
+        "acc": 0.78125,
+        "ece": 0.08761492595076563
+      },
+      "snr_20": {
+        "acc": 0.6125,
+        "ece": 0.11254052734002472,
+        "fail_auroc": 0.8126234364713627
+      },
+      "snr_10": {
+        "acc": 0.509375,
+        "ece": 0.19229140081442891,
+        "fail_auroc": 0.748622562619671
+      },
+      "snr_5": {
+        "acc": 0.415625,
+        "ece": 0.2812583340797573,
+        "fail_auroc": 0.6897189497808692
+      },
+      "snr_0": {
+        "acc": 0.325,
+        "ece": 0.37260594917461276,
+        "fail_auroc": 0.6811342592592593
+      },
+      "snr_-5": {
+        "acc": 0.259375,
+        "ece": 0.41777830487117174,
+        "fail_auroc": 0.636571602867165
+      },
+      "unseen_auroc_entropy": 0.5504052734375,
+      "unseen_auroc_mi": 0.7286914062500001,
+      "unseen_mean_conf": 0.6647493504919112,
+      "review": [
+        {
+          "flag_fraction": 0.1,
+          "problems_total": 1311,
+          "problems_caught": 176,
+          "catch_rate": 0.13424866514111367,
+          "kept_accuracy": 0.5034285714285714,
+          "kept_unseen": 266
+        },
+        {
+          "flag_fraction": 0.2,
+          "problems_total": 1311,
+          "problems_caught": 337,
+          "catch_rate": 0.2570556826849733,
+          "kept_accuracy": 0.5240230621396541,
+          "kept_unseen": 231
+        },
+        {
+          "flag_fraction": 0.3,
+          "problems_total": 1311,
+          "problems_caught": 505,
+          "catch_rate": 0.38520213577421814,
+          "kept_accuracy": 0.5537790697674418,
+          "kept_unseen": 192
+        }
+      ],
+      "review_mi": [
+        {
+          "flag_fraction": 0.1,
+          "problems_total": 1311,
+          "problems_caught": 168,
+          "catch_rate": 0.12814645308924486,
+          "kept_accuracy": 0.4982876712328767,
+          "kept_unseen": 264
+        },
+        {
+          "flag_fraction": 0.2,
+          "problems_total": 1311,
+          "problems_caught": 339,
+          "catch_rate": 0.2585812356979405,
+          "kept_accuracy": 0.5259781911481719,
+          "kept_unseen": 233
+        },
+        {
+          "flag_fraction": 0.3,
+          "problems_total": 1311,
+          "problems_caught": 508,
+          "catch_rate": 0.38749046529366893,
+          "kept_accuracy": 0.5563636363636364,
+          "kept_unseen": 193
+        }
+      ],
+      "night_no_review_accuracy_on_known": 0.48385416666666664
+    }
+  },
+  "clean_acc_per_fold": {
+    "1": {
+      "ensemble": 0.766,
+      "mc_dropout": 0.75,
+      "softmax": 0.781
+    },
+    "2": {
+      "ensemble": 0.828,
+      "mc_dropout": 0.75,
+      "softmax": 0.797
+    },
+    "3": {
+      "ensemble": 0.766,
+      "mc_dropout": 0.734,
+      "softmax": 0.766
+    },
+    "4": {
+      "ensemble": 0.812,
+      "mc_dropout": 0.781,
+      "softmax": 0.781
+    },
+    "5": {
+      "ensemble": 0.734,
+      "mc_dropout": 0.75,
+      "softmax": 0.75
+    }
+  }
+}
